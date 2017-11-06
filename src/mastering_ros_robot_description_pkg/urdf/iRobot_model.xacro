@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<robot name="iRobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:property name="mass" value="0.35" />
+  <xacro:property name="width" value="0.245" />
+  <xacro:property name="height" value="0.2" />
+  <xacro:property name="length" value="0.49" />
+  <xacro:property name="wheel_radius" value="0.1" />
+  <xacro:property name="wheel_length" value="0.06" />
+  <xacro:property name="body_inertia">
+    <inertia ixx="0.007" ixy="0.0" ixz="0.0" iyy="0.007" iyz="0.0" izz="0.012" />
+  </xacro:property>
+  
+    <link name="chassis">
+    <inertial>
+      <mass value="${mass}" />
+      <origin xyz="0 0 0.1"/>
+      <xacro:insert_block name="body_inertia"/>
+    </inertial>
+
+    <visual name='visual'>
+      <origin xyz="0 0 0.1" rpy="0 0 0" />
+      <geometry>
+        <box size="${body_width} ${body_width} ${body_height}"/>
+      </geometry>
+    </visual>
+
+    <collision name='collision'>
+      <origin xyz="0 0 0.1" rpy="0 0 0" />
+      <geometry>
+        <box size="${body_width} ${body_width} ${body_height}" />
+      </geometry>
+    </collision>
+  </link>
+  
+    <link name="right_wheel">
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0.1 -0.13 0.1" rpy="0 1.5707 1.5707"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.2"/>
+    </inertial>
+
+    <visual name="visual">
+      <geometry>
+        <cylinder length="0.05" radius="0.1"/>
+      </geometry>
+    </visual>
+
+    <collision name="collision">
+      <geometry>
+        <cylinder length="0.05" radius="0.1"/>
+      </geometry>
+    </collision>
+  </link>
+   
+  <link name="left_wheel">
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0.1 0.13 0.1" rpy="0 1.5707 1.5707"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.2"/>
+    </inertial>
+
+    <visual name="visual">
+      <geometry>
+        <cylinder length="0.05" radius="0.1"/>
+      </geometry>
+    </visual>
+
+    <collision name="collision">
+      <geometry>
+        <cylinder length="0.05" radius="0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="left_wheel_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit effort="1000.0" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="0 0.03 0"/>
+    <parent link="chassis"/>
+    <child link="left_wheel"/>
+  </joint>
+
+  <joint name="right_wheel_joint" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit effort="1000.0" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="0 -0.03 0"/>
+    <parent link="chassis"/>
+    <child link="right_wheel"/>
+  </joint>  
+  
+</robot>

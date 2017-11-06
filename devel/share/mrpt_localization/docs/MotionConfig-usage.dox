@@ -1,0 +1,18 @@
+\subsubsection usage Usage
+\verbatim
+<node name="mrpt_localization" pkg="mrpt_localization" type="mrpt_localization">
+  <param name="debug" type="bool" value="False" />
+  <param name="motion_noise_type" type="int" value="0" />
+  <param name="gaussian_alpha_1" type="double" value="0.034" />
+  <param name="gaussian_alpha_2" type="double" value="0.057" />
+  <param name="gaussian_alpha_3" type="double" value="0.014" />
+  <param name="gaussian_alpha_4" type="double" value="0.097" />
+  <param name="gaussian_alpha_xy" type="double" value="0.005" />
+  <param name="gaussian_alpha_phi" type="double" value="0.05" />
+  <param name="use_default_motion" type="bool" value="False" />
+  <param name="default_noise_xy" type="double" value="0.1" />
+  <param name="default_noise_phi" type="double" value="2.0" />
+  <param name="update_while_stopped" type="bool" value="True" />
+</node>
+\endverbatim
+

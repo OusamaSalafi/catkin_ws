@@ -1,0 +1,8 @@
+prefix=/home/osaka/catkin_ws/install
+
+Name: chapter8_tutorials
+Description: Description of chapter8_tutorials
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/osaka/catkin_ws/install/lib 
+Requires: 

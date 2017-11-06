@@ -1,0 +1,8 @@
+prefix=/home/osaka/catkin_ws/install
+
+Name: talker_and_listner
+Description: Description of talker_and_listner
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/osaka/catkin_ws/install/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/osaka/catkin_ws/install
+
+Name: mrpt_bridge
+Description: Description of mrpt_bridge
+Version: 0.1.18
+Cflags: -I/home/osaka/catkin_ws/install/include
+Libs: -L/home/osaka/catkin_ws/install/lib -lmrpt_bridge
+Requires: geometry_msgs message_runtime mrpt_msgs nav_msgs sensor_msgs std_msgs

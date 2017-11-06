@@ -1,0 +1,8 @@
+prefix=/home/osaka/catkin_ws/devel
+
+Name: mastering_ros_demo_pkg
+Description: Description of mastering_ros_demo_pkg
+Version: 0.0.0
+Cflags: -I/home/osaka/catkin_ws/devel/include
+Libs: -L/home/osaka/catkin_ws/devel/lib 
+Requires: 

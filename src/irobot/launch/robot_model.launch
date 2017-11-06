@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="model" />
+	<arg name="gui" default="False" />
+	<param name="robot_description" textfile="$(find irobot)/urdf/irobot_model.urdf" />
+	<param name="use_gui" value="$(arg gui)"/>
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node>
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find irobot)/irobot_model_urdf.rviz" required="true" />
+	<node name="odom" pkg="irobot" type="odom" ></node> 
+	<node name="joy_node" pkg="joy" type="joy_node" ></node>
+	<node name="teleop_joy" pkg="irobot" type="teleop_joy" ></node>   
+</launch>

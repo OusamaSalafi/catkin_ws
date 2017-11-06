@@ -1,0 +1,8 @@
+prefix=/home/osaka/catkin_ws/devel
+
+Name: mrpt_rawlog
+Description: Description of mrpt_rawlog
+Version: 0.1.18
+Cflags: -I/home/osaka/catkin_ws/devel/include -I/home/osaka/catkin_ws/src/mrpt_navigation/mrpt_rawlog/include
+Libs: -L/home/osaka/catkin_ws/devel/lib -lrawlog_record -lrawlog_play
+Requires: roscpp tf std_msgs nav_msgs sensor_msgs mrpt_msgs mrpt_bridge dynamic_reconfigure

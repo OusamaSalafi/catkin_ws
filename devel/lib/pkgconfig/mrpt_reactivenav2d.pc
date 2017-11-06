@@ -1,0 +1,8 @@
+prefix=/home/osaka/catkin_ws/devel
+
+Name: mrpt_reactivenav2d
+Description: Description of mrpt_reactivenav2d
+Version: 0.1.18
+Cflags: 
+Libs: -L/home/osaka/catkin_ws/devel/lib 
+Requires: actionlib actionlib_msgs dynamic_reconfigure geometry_msgs mrpt_bridge roscpp tf visualization_msgs

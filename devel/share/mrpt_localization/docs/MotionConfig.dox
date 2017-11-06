@@ -1,0 +1,17 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~debug" : \b [bool] Debug min: False, default: False, max: True
+- \b "~motion_noise_type" : \b [int] motion noise min: 0, default: 0, max: 1
+- \b "~gaussian_alpha_1" : \b [double] alpha_1 min: 0.0, default: 0.034, max: 1.0
+- \b "~gaussian_alpha_2" : \b [double] alpha_2 min: 0.0, default: 0.057, max: 1.0
+- \b "~gaussian_alpha_3" : \b [double] alpha_3 min: 0.0, default: 0.014, max: 1.0
+- \b "~gaussian_alpha_4" : \b [double] alpha_4 min: 0.0, default: 0.097, max: 1.0
+- \b "~gaussian_alpha_xy" : \b [double] alpha_xy min: 0.0, default: 0.005, max: 1.0
+- \b "~gaussian_alpha_phi" : \b [double] alpha_phi min: 0.0, default: 0.05, max: 3.14
+- \b "~use_default_motion" : \b [bool] use default motion in case of missing odom data min: False, default: False, max: True
+- \b "~default_noise_xy" : \b [double] default_noise_xy min: 0.0, default: 0.1, max: 1.0
+- \b "~default_noise_phi" : \b [double] default_noise_phi min: 0.0, default: 2.0, max: 3.14
+- \b "~update_while_stopped" : \b [bool] keep updating filter while the robot is stopped min: False, default: True, max: True
+

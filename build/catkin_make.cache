@@ -1,0 +1,2 @@
+beginner_tutorials:diff_wheeled_robot_gazebo:irobot:mastering_ros_demo_pkg:mastering_ros_robot_description_pkg
+-DCATKIN_DEVEL_PREFIX=/home/osaka/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/osaka/catkin_ws/install -G Unix Makefiles

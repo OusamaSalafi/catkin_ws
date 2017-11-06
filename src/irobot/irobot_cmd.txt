@@ -1,0 +1,11 @@
+$ roscore
+$ rosrun joy joy_node
+$ rosrun irobot teleop_joy
+For test: $ rostopic echo /joy
+$ rosrun rosserial_python serial_node.py /dev/ttyACM0 _baud:=57600
+##mapping
+$ source ~/catkin_ws/devel/setup.bash
+$ rosrun irobot range_to_laserscan
+$ rosrun irobot imu
+$ rosrun irobot publish_odometry
+$ rosrun gmapping slam_gmapping scan:=scan

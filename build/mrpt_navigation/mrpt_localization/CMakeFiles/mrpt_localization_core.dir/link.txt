@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -Wno-long-long -Wno-variadic-macros -O3 -DNDEBUG  -shared -Wl,-soname,libmrpt_localization_core.so -o /home/osaka/catkin_ws/devel/lib/libmrpt_localization_core.so CMakeFiles/mrpt_localization_core.dir/src/mrpt_localization/mrpt_localization_core.cpp.o -lmrpt-base -lmrpt-opengl -lmrpt-gui -lmrpt-obs -lmrpt-vision -lmrpt-tfest -lmrpt-maps -lmrpt-slam 

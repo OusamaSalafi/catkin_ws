@@ -1,0 +1,8 @@
+prefix=/home/osaka/catkin_ws/install
+
+Name: irobot
+Description: Description of irobot
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/osaka/catkin_ws/install/lib 
+Requires: 
